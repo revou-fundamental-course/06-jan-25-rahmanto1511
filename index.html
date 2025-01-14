@@ -2,60 +2,103 @@
     <head>
         <title>Project</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        
     </head>
     <body>
         <header class="main-header">
-            <div class="logo">
-
-            </div>
+            <div class="logo"> </div>
             <nav>
-                <a href="#home" class="left-rounded">Home</a>
-                <a href="#profile">My Profile</a>
-                <a href="#porto">Portofolio</a>
-                <a href="#massage" class="right-rounded">Message Us</a>
+                <a href="#home" class="left-rounded"><b>Home</b></a>
+                <a href="#profile"><b>My Profile</b></a>
+                <a href="#porto"><b>Portofolio</b></a>
+                <a href="#massage" class="right-rounded"><b>Message Us</b></a>
             </nav>
         </header>
         <hr>
         <main>
             <!--Home Page--> <!--Span adalah sisipan untuk komponen yng masih jadi bagian kesatuan-->
-            <section>
+            <section class="homepage">
                 <header id="home">
-                    <h1>Hi <span id="username">User</span>. Welcome to our website.</h1>
-                    <p>Lorem ipsum dolor sit amet ...</p>
+                    <h1>Hi <span id="username"> </span>. Welcome to our website.</h1>
+                    <p>This is my mini project web design ...</p>
+                    <script src="js/script.js"></script>
                 </header>
             </section>
-            <hr>
+            
             <!--My Profile-->
-            <section>
+            <section class="profilepage">
                 <header id="profile">
-                    <h1>Title dari setiap section.</h1>
+                    <h1>My Profile</h1>
                 </header>
+                <main>
+                    <div class="profilpic"> </div>
+                <div class="profilinfo1">
+                    <h2>Rahmanto</h2>
+                    <h3>Yogyakarta, 15 November 1997</h3>
+                    <h4>
+                        <image src="css/assets/mail.png" class="icon"> rahmanto1511@gmail.com &emsp;|&emsp; 
+                        <a href="https://wa.me/+6285712882562/" target="_blank"><image src="css/assets/wa.png" class="icon"> +6285712882562</a> &emsp;|&emsp;
+                        <a href="https://www.linkedin.com/in/rahmanto-rahmanto-80a88221b/" target="_blank"><image src="css/assets/in.png" class="icon"> Rahmanto Rahmanto</a>
+                    </h4>
+                </div>
+                </main>
+                <div class="profilinfo2">
+                    <p>I am graduated Mechatronics Engineering Major from Yogyakarta State University with skills and  interested in career in the field of information technology. Having experience working as a content moderator makes me adapt quickly and learn new things following developments in information. Competent in programming logic, software interface design, engineering drawing, and wiring electronics system.</p>
+                </div>
             </section>
             <hr>
             <!--Portofolio-->
-            <section>
+            <section class="portopage">
                 <header id="porto">
                     <h1>Title dari setiap section.</h1>
                 </header>
+                <main>
+
+                </main>
             </section>
-            <hr>
             <!--Massage Us-->
-            <section>
+            <section class="messagepage">
                 <header  id="massage">
-                    <h1>Title dari setiap section.</h1>
+                    <h1>Massage Us</h1>
                 </header>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
+                <main>
+                    <div class="formpesan">
+                        <form name="formpesan1" onsubmit="return validasiForm()">
+                            <p class="text1">
+                                Nama &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:&nbsp; 
+                                <input type="text" name="nama" class="in1" placeholder="Masukan Nama">
+                            </p>
+                            <p class="text1">
+                                Tanggal Lahir &nbsp;&nbsp;&nbsp;:&nbsp; 
+                                <input type="date" name="lahir" class="in1">
+                            </p>
+                            <p class="text1">
+                                Jenis Kelamin &nbsp;&nbsp;&nbsp;:&nbsp;
+                                <input type="radio" name="kelamin" id="lk" value="Laki-laki"> 
+                                <label for="lk">Laki-laki</label>
+                                <input type="radio" name="kelamin" id="pr" value="Perempuan">
+                                <label for="pr">Perempuan</label>
+                            </p>
+                            <p class="text1">
+                                Pesan &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:&nbsp; 
+                                <textarea name="pesan" class="in2" placeholder="Apa pesan anda untuk kami?"></textarea>
+                            </p>
+                            <p class="text1"><input type="submit" class="in3" value="S U B M I T"></p>
+                        </form>
+                    </div>
+                    <div class="pesantampil">
+                        <span id="time"> </span><br><br>
+                        <span id="nama1"> </span> <br>
+                        <span id="lahir1"> </span> <br>
+                        <span id="kelamin1"> </span> <br>
+                        <span id="pesan1"> </span>
+                    </div>
+                </main>
             </section>
         </main>
         <hr>
         <footer>
             <p>Copyright by Rahmanto &copy; 2025</p>
         </footer>
-        <hr>
     </body>
 </html>

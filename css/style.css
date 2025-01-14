@@ -1,20 +1,39 @@
+hr {
+    margin: 0;
+}
+h1 {
+    margin: 0px;
+}
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 30px 10px 30px;
+    background-color: #196b69ff;
 }
 .logo {
-    border: 1px solid black;
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/50);
+    background-image: url('assets/icon.png');
+    background-size: 50px;
 }
 nav > a {
-    border: 1px solid black;
+    border: 1px solid #196b69ff;
     padding: 8px 20px 8px 20px;
-    color: black;
+    color: #d8f4f1ff;
     text-decoration: none;
+    background-color: #11999eff;
+}
+nav > a:hover {
+    background-color: #14b7bcff;
+    scale: 110%;
+    color: #132f2bff;
+}
+nav > a:active {
+    background-color: #1f8c89ff;
+    scale: 98%;
+    color: #d8f4f1ff;
 }
 nav {
     display: flex;
@@ -24,4 +43,146 @@ nav {
 }
 .left-rounded {
     border-radius: 5px 0 0 5px;
+}
+.homepage {
+    height: 578px;
+    background: url('assets/bghome.jpg');
+    padding: 40px 50px 30px 50px;
+    color: #f4e9b1ff;
+}
+.profilepage {
+    padding: 30px 50px 50px 50px;;
+    background-color: #d8f4f1ff;
+}
+.profilepage > main {
+    display: flex;
+    margin-top: 25px;
+}
+.profilpic {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url('assets/profilepic.jpg');
+    background-size: 150px;
+    flex-direction: column;
+    display:flex;
+    margin: 0 30px 20px 0;
+}
+.profilinfo1 {
+    width: flex;
+    flex: 3;
+    flex-direction: column;
+    align-content: center;
+    text-align: left;
+    color: #004940ff;
+}
+.profilinfo1 > h2,h3,h4 {
+    margin: 0 0 5px 0;
+}
+.profilinfo1 > h4 > a {
+    text-decoration: none;
+    color: #004940ff;
+}
+.profilinfo1 > h4 > a:hover {
+    color: #858585ff;
+    font-size: 12.5pt;
+}
+.icon {
+    width: 18px;
+}
+.profilinfo2 {
+    display: flex;
+    align-content: center;
+    text-align: justify;
+    color: #004940ff;
+}
+.profilinfo2 > p {
+    padding: 0px;
+    margin: 0px;
+}
+.portopage {
+    background-color: #d8f4f1ff;
+    padding: 30px 50px 30px 50px;
+}
+.messagepage {
+    padding: 30px 50px 30px 50px;
+    background-color: #11999eff;
+    color: #f4e9b1ff;
+}
+.messagepage > main {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+}
+.formpesan {
+    flex: 1;
+    padding-right: 30px;
+}
+.in1 {
+    border-radius: 4px;
+    border: 0px;
+    height: 30px;
+    width: flex;
+    flex: 1;
+    padding: 0 5px 0 5px;
+}
+.in2 {
+    border-radius: 4px;
+    border: 0px;
+    height: 80px;
+    width: flex;
+    flex: 1;
+    padding: 5px;
+}
+.in3 {
+    border-radius: 4px;
+    border: 0px;
+    height: 35px;
+    width: flex;
+    flex: 1;
+    font-size: 11pt;
+    font-family: 'Arial';
+    color: black;
+    background-color: #d8b500ff;
+}
+.in3:hover {
+    background-color: darkslategray;
+    color: #d8b500ff;
+    scale: 103%;
+}
+.in3:active {
+    background-color: #eddb81ff;
+    color: black;
+    scale: 100%;
+}
+.text1 {
+    display: flex;
+    flex: 1;
+}
+.pesantampil {
+    height: flex;
+    color: black;
+    border: 3px dashed black;
+    border-radius: 10px;
+    flex: 1;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+} 
+footer {
+    font-family: 'Courier New';
+    font-size: 8pt;
+    color: #f4f4f4ff;
+    align-content: center;
+    padding-right: 20px;
+    height: 35px;
+    background-color: #3c3c3cff;
+}
+footer > p {
+    margin: 0px;
+    text-align: right;
+}
+body {
+    font-family: 'Calibri';
+    font-size: 12pt;
 }
