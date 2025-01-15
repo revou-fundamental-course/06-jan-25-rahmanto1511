@@ -40,6 +40,7 @@ function tampilkanform(nama, lahir, kelamin, pesan) {
     document.getElementById("lahir1").innerHTML = "<b>Tanggal Lahir &nbsp;: </b>" + lahir;
     document.getElementById("kelamin1").innerHTML = "<b>Jenis Kelamin : </b>" + kelamin;
     document.getElementById("pesan1").innerHTML = "<b>Pesan : </b><br>" + pesan;
+    document.getElementById("clear").innerHTML = "<input type='submit' class='in3' value='Clear' onclick='return clearForm()'>";
 }
 
 function validasiForm() {
@@ -55,5 +56,14 @@ function validasiForm() {
     }
     tampilkanform(nama, lahir, kelamin, pesan);
     return false;
+}
+
+function clearForm() {
+    document.getElementById("time").innerHTML = "";
+    document.getElementById("nama1").innerHTML = "";
+    document.getElementById("lahir1").innerHTML = "";
+    document.getElementById("kelamin1").innerHTML = "";
+    document.getElementById("pesan1").innerHTML = "";
+    document.getElementById("clear").innerHTML = "";
 }
 
