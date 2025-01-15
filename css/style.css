@@ -27,16 +27,17 @@ nav > a {
 }
 nav > a:hover {
     background-color: #14b7bcff;
-    scale: 110%;
+    scale: 105%;
     color: #132f2bff;
 }
 nav > a:active {
     background-color: #1f8c89ff;
-    scale: 98%;
+    scale: 99%;
     color: #d8f4f1ff;
 }
 nav {
     display: flex;
+    flex-direction: row;
 }
 .right-rounded {
     border-radius: 0 5px 5px 0;
@@ -45,18 +46,38 @@ nav {
     border-radius: 5px 0 0 5px;
 }
 .homepage {
-    height: 578px;
-    background: url('assets/bghome.jpg');
-    padding: 40px 50px 30px 50px;
     color: #f4e9b1ff;
 }
+.banner {
+    height: 500px;
+    width: 100%;
+}
+.helo {
+    margin: -450px 50px 130px 50px;
+}
+.controlbanner {
+    display: flex;
+    justify-content: space-between;
+}
+.controlbanner > button {
+    background: none;
+    border: none;
+}
+.tombol {
+    width: 30px;
+}
+.tombol:hover {
+    scale: 115%;
+}
 .profilepage {
+    margin-top: 200px;
     padding: 30px 50px 50px 50px;;
     background-color: #d8f4f1ff;
 }
 .profilepage > main {
     display: flex;
     margin-top: 25px;
+    flex-direction: row;
 }
 .profilpic {
     height: 150px;
@@ -64,14 +85,12 @@ nav {
     border-radius: 50%;
     background-image: url('assets/profilepic.jpg');
     background-size: 150px;
-    flex-direction: column;
     display:flex;
     margin: 0 30px 20px 0;
 }
 .profilinfo1 {
     width: flex;
     flex: 3;
-    flex-direction: column;
     align-content: center;
     text-align: left;
     color: #004940ff;
@@ -102,7 +121,24 @@ nav {
 }
 .portopage {
     background-color: #d8f4f1ff;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 50px 50px 50px;
+}
+.portopage > main {
+    display: flex;
+    flex-direction: row;
+}
+.infoporto {
+    flex: 3;
+    align-content: center;
+}
+.info1 {
+    text-align: justify;
+}
+.qr {
+    text-align: center;
+}
+.imgporto {
+    flex: 2;
 }
 .messagepage {
     padding: 30px 50px 30px 50px;
@@ -171,7 +207,6 @@ nav {
 } 
 footer {
     font-family: 'Courier New';
-    font-size: 8pt;
     color: #f4f4f4ff;
     align-content: center;
     padding-right: 20px;
@@ -181,8 +216,63 @@ footer {
 footer > p {
     margin: 0px;
     text-align: right;
+    font-size: 8pt;
 }
 body {
     font-family: 'Calibri';
     font-size: 12pt;
+}
+@media only screen and (max-width: 600px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+        width: -webkit-fill-available;
+    }
+    nav > a {
+        border-radius: 5px;
+    }
+    .right-rounded {
+        border-radius: 5px;
+    }
+    .left-rounded {
+        border-radius: 5px;
+    }
+    .profilepage > main {
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .portopage > main {
+        flex-direction: column;
+    }
+    .imgporto {
+        text-align: center;
+    }
+    .messagepage > main {
+        flex-direction: column;
+    }
+    .formpesan {
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 790px) {
+    .messagepage > main {
+        flex-direction: column;
+    }
+    .formpesan {
+        padding-right: 0px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .banner {
+        height: auto;
+        width: 100%;
+    }
 }

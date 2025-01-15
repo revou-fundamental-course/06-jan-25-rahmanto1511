@@ -18,12 +18,22 @@
         <main>
             <!--Home Page--> <!--Span adalah sisipan untuk komponen yng masih jadi bagian kesatuan-->
             <section class="homepage">
-                <header id="home">
+                <div>
+                    <img class="banner" src="css/assets/img1.jpg"/>
+                    <img class="banner" src="css/assets/img2.jpg"/>
+                    <img class="banner" src="css/assets/img3.jpg"/>
+                    <img class="banner" src="css/assets/img4.jpg"/>
+                </div>
+                <div class="helo">
                     <h1>Hi <span id="username"> </span>. Welcome to our website.</h1>
                     <p>This is my mini project web design ...</p>
-                    <script src="js/script.js"></script>
-                </header>
+                </div>
+                <div class="controlbanner">
+                    <button onclick="plusBanner(-1)"><img class="tombol" src="css/assets/prev.png"></button>
+                    <button onclick="plusBanner(1)"><img class="tombol" src="css/assets/next.png"></button>
+                </div>
             </section>
+            <script src="js/script.js"></script>
             
             <!--My Profile-->
             <section class="profilepage">
@@ -50,10 +60,21 @@
             <!--Portofolio-->
             <section class="portopage">
                 <header id="porto">
-                    <h1>Title dari setiap section.</h1>
+                    <h1>My Portofolio</h1><br>
                 </header>
                 <main>
-
+                    <div class="imgporto">
+                        <image src="css/assets/oto.png" width="300px">
+                    </div>
+                    <div class="infoporto">
+                        <div class="info1">    
+                            <p><b>Apps Name : </b>oto_G<br>
+                            <b>OS Support : </b>Android<br>
+                            <b>Min Version : </b>4.4 (Kitkat)</p>
+                            <p></p>
+                        </div>
+                        <div class="qr"><br><image src="css/assets/qr.png" width="100px"><br>Scan to download apk.</div>
+                    </div>
                 </main>
             </section>
             <!--Massage Us-->
