@@ -9,7 +9,7 @@ function sapa() {
     }
 }
 
-//sapa();
+sapa();
 
 var slideIndex = 1;
 showDivs(slideIndex);
