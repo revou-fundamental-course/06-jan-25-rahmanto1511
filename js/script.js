@@ -32,7 +32,7 @@ function showDivs(n) {
     imgList[slideIndex-1].style.display = "block";
 }
 
-setInterval (() => {plusBanner(1)}, 3000);
+setInterval (() => {plusBanner(1)}, 5000);
 
 function tampilkanform(nama, lahir, kelamin, pesan) {
     document.getElementById("time").innerHTML = "<b>Time : </b>" + Date();
