@@ -11,6 +11,7 @@ function sapa() {
 
 sapa();
 
+//Ganti Banner Web Otomatis
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -34,6 +35,7 @@ function showDivs(n) {
 
 setInterval (() => {plusBanner(1)}, 5000);
 
+//Menampilkan Hasil Isi form ke kotak tampilan
 function tampilkanform(nama, lahir, kelamin, pesan) {
     document.getElementById("time").innerHTML = "<b>Time : </b>" + Date();
     document.getElementById("nama1").innerHTML = "<b>Nama &emsp;&emsp;&emsp;&nbsp;: </b>" + nama;
@@ -43,6 +45,7 @@ function tampilkanform(nama, lahir, kelamin, pesan) {
     document.getElementById("clear").innerHTML = "<input type='submit' class='in3' value='Clear' onclick='return clearForm()'>";
 }
 
+//Validasi form tidak boleh kosong
 function validasiForm() {
     const nama = document.forms["formpesan1"]["nama"].value;
     const lahir = document.forms["formpesan1"]["lahir"].value;
@@ -58,6 +61,7 @@ function validasiForm() {
     return false;
 }
 
+//Tombol clear untuk membersihkan isi kotak tampilan form
 function clearForm() {
     document.getElementById("time").innerHTML = "";
     document.getElementById("nama1").innerHTML = "";
